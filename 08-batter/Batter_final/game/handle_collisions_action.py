@@ -36,13 +36,13 @@ class HandleCollisionsAction(Action):
                 # mid_x4 = min_x + 10
                 # max_x = min_x + 14
                 if ball.get_position().get_x() >= min_x and ball.get_position().get_x() <= mid_x1:
-                    velocity = Point(-1, -1) #ball.get_velocity().get_x()
+                    velocity = Point(random.randint(-3, 0), -1) #ball.get_velocity().get_x()
                     ball.set_velocity(velocity)
                 # elif ball.get_position().get_x() >= mid_x2 and ball.get_position().get_x() >= mid_x3:
                 #     velocity = Point(0, -1)
                 #     ball.set_velocity(velocity)
                 elif ball.get_position().get_x() >= mid_x2 and ball.get_position().get_x() <= mid_x3:
-                    velocity = Point(1, -1)
+                    velocity = Point(random.randint(0, 3), -1)
                     ball.set_velocity(velocity)
         
             elif wall_top.get_position().get_y()+1 == ball.get_position().get_y():
