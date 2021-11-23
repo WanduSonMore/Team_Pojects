@@ -69,6 +69,7 @@ class HandleCollisionsAction(Action):
                 velocity = ball.get_velocity().reverse_y()
                 ball.set_velocity(velocity)
             brick_num += 1
+            wall_top.set_text(f"Score: {brick_num}")
 
         for paddle in cast["paddle"]:
             if paddle.get_position().get_x() == wall_left.get_position().get_x() + 1:
