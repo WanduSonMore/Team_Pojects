@@ -61,6 +61,42 @@ def main(screen):
     wall_top.set_position(position)
     cast["wall_top"] = [wall_top]
 
+    x4 = int(38)
+    y4 = int(2)
+    door = []
+    while y4 != 5:
+        if y4 == 2:
+            position = Point(x4, y4)
+            door_part = Actor()
+            door.append(door_part)
+            door_part.set_text("_____")
+            door_part.set_position(position)
+            y4 = y4 + 1
+            x4 = x4 - 1
+        elif y4 == 3:
+            position = Point(x4, y4)
+            door_part = Actor()
+            door.append(door_part)
+            door_part.set_text("| .|. |")
+            door_part.set_position(position)
+            y4 = y4 + 1
+        else:
+            position = Point(x4, y4)
+            door_part = Actor()
+            door.append(door_part)
+            door_part.set_text("|__|__|")
+            door_part.set_position(position)
+            y4 = y4 + 1
+        cast["door"] = door
+    
+    x = int(40)
+    y = int(5)
+    position = Point(x, y)
+    great_button = Actor()
+    great_button.set_text("0")
+    great_button.set_position(position)
+    cast["great_button"] = [great_button]
+
     x = int(constants.MAX_X / 2)
     y = int(constants.MAX_Y / 2)
     position = Point(x, y)
@@ -91,7 +127,17 @@ def main(screen):
     zig = Actor()
     zig.set_text("A")
     zig.set_position(position)
+    zig.set_value(int(0))
     cast["zig"] = [zig]
+
+    x = int(7)
+    y = int(16)
+    position = Point(x, y)
+    zag = Actor()
+    zag.set_text("v")
+    zag.set_position(position)
+    zag.set_value(int(0))
+    cast["zag"] = [zag]
 
     x = int(65)
     y = int(15)
@@ -99,8 +145,8 @@ def main(screen):
     polp = Actor()
     polp.set_text("pq")
     polp.set_position(position)
+    polp.set_value(int(0))
     cast["polp"] = [polp]
-
 
     x = int(0)
     y = int(19)
@@ -154,7 +200,16 @@ def main(screen):
     cast["bushes"] = bushes
 
     x3 = int(65)
-    y3 = int()
+    y3 = int(13)
+    buttons = []
+    while y3 != 5:
+        position = Point(x3, y3)
+        button = Actor()
+        buttons.append(button)
+        button.set_text("O")
+        button.set_position(position)
+        y3 = y3 - 2
+    cast["buttons"] = buttons
 
     x = int(0)
     y = int(0)
@@ -167,6 +222,7 @@ def main(screen):
     berry_count = Actor()
     berry_count.set_value(int(0))
     cast["berry_count"] = [berry_count]
+
         
     a = int(0)
     key_list = []
