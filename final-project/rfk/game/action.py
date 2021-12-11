@@ -1,3 +1,11 @@
+# Description:
+#   The responsibility of this class of objects is translate user input into some kind of intent.
+#  
+# OOP Principles Used:
+#   Polymorphism 
+# Reasoning:
+#   This file uses polymorphism because it is the one method that is used to execute the differnt scenarios.
+
 class Action:
     """A code template for a thing done in a game. The responsibility of 
     this class of objects is to interact with actors to change the state of the game. 

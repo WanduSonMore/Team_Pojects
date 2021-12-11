@@ -1,3 +1,12 @@
+# Description:
+#   The responsibility of this class of objects is translate user input into some kind of intent.
+#  
+# OOP Principles Used:
+#   Encapsulation and Abstraction
+# Reasoning:
+#   This class used encapsulation because it put a underscore next to the information in the def __init__(self): section which should help protect the assigned information.
+#   This file uses abstraction because many of the values and traits this file give to objects and entities are more of an idea for the player rather than a visible object.
+
 from game import constants
 from game.point import Point
 

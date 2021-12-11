@@ -1,3 +1,13 @@
+# Description:
+#   This section outputs what is changing while the code is running by using the data it recieves from the input, which it then send to the screen to change.
+#  
+# OOP Principles Used:
+#   Abstraction and encapsulation
+# Reasoning:
+#   I believe that it uses abstraction because it uses a idea that if the user inputs this then this is what will change.
+#   An example of this is whenever output recieves velocity points from input it will then use that velocity to move the player character.
+#   This class used encapsulation because it put a underscore next to the sceens in this section which should help protect the assigned information.
+
 import sys
 from game import constants
 from asciimatics.widgets import Frame

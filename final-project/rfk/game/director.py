@@ -1,3 +1,12 @@
+# Description:
+#   The responsibility of this file is to manage and monitor the different actions taken
+#   
+# OOP Principles Used:
+#   Polymorphism and encapsulation
+# Reasoning:
+#   This class uses polymorphism because it is where you excute the action so it can chose the assigned action for the current scenario.
+#   This class used encapsulation because it put a underscore next to the cast and script in this section which should help protect the assigned information.
+
 from time import sleep
 from game import constants
 

@@ -1,3 +1,12 @@
+# Description:
+#   This section helps with the creation of positions of objects and entities in the program.
+#   It also has a section where different parts of the program can call upon it to find the x and y positions of the object or entity.
+# OOP Principles Used:
+#   Abstraction and encapsulation
+# Reasoning:
+#   I believe that it uses abstraction because it uses the idea of grid positioning without actually showing it.
+#   This class used encapsulation because it put a underscore next to the x and y in this section which should help protect the assigned information.
+
 class Point:
     """Represents distance from an origin (0, 0).
 

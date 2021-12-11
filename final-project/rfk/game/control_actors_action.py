@@ -1,3 +1,13 @@
+# Description:
+#   The responsibility of this class of objects is translate user input into some kind of intent.
+#  
+# OOP Principles Used:
+#   Inheritance, polymorphism and encapsulation
+# Reasoning:
+#   This class uses inheritance because the class DrawActorsAction is inheriting things from the action file.
+#   This file uses polymorphism because it is one of the scenarios the action file can perform in the code.
+#   This class used encapsulation because it put a underscore next to the input_service in this section which should help protect the assigned information.
+
 from game import constants
 from game.action import Action
 

@@ -1,3 +1,13 @@
+# Description:
+#   This is the section monitors where the player character is on the screen, what object and entities he collides with, and the possible interactions with those said object and entities. 
+#  
+# OOP Principles Used:
+#   Inheritance and polymorphism
+# Reasoning:
+#   This class uses inheritance because the class HandleCollisionsAction is inheriting things from the action file.
+#   This file uses polymorphism because it is one of the scenarios the action file can perform in the code.
+
+
 import random
 from game import constants
 from game.action import Action

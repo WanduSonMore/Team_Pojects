@@ -1,4 +1,18 @@
-import random
+#
+# Description:
+#   This section is the main part of the code that is used to run the code.
+#   It contains all of the entities and ojects that are seen in the game and the information that is tied them
+#   This information includes things like their positions, what they look like, values tied to them and whether of not something in is true of false for the entities.
+#   It also contain the order in which things happen in the code. 
+#   In this codes case the collusion of the player character with objects and entities comes first before the movement of player.
+# OOP Principles Used:
+#   Abstraction
+# Reasoning:
+#   This file uses abstraction because many of the objects and entities and their interaction exist as a thought or idea rather than a physical object.
+#   Some examples of this are the keys and berries. 
+#   You never actually see the keys or berries in the game, but they are there and you do collect them.
+
+
 from game import constants
 from game.director import Director
 from game.actor import Actor
@@ -17,10 +31,6 @@ def main(screen):
     # create the cast {key: tag, value: list}
     cast = {}
 
-    # marquee = Actor()
-    # marquee.set_text("")
-    # marquee.set_position(Point(1, 0))
-    # cast["marquee"] = [marquee]
     x5 = int(1)
     y5 = int(1)
     walls_left = []
@@ -236,21 +246,6 @@ def main(screen):
     cast["key_amount"] = [key_amount]
 
 
-
-
-    # artifacts = []
-    # for n in range(constants.ARTIFACTS):
-    #     text = chr(random.randint(33, 126))
-    #     description = constants.MESSAGES[n]
-
-    #     artifact = Actor()
-    #     artifact.set_description(description)
-    #     artifact.set_text(text)
-    #     artifact.set_position(position)
-    #     artifacts.append(artifact)
-    # cast["artifact"] = artifacts
-
-    # create the script {key: tag, value: list}
     script = {}
 
     input_service = InputService(screen)
@@ -259,10 +254,9 @@ def main(screen):
     move_actors_action = MoveActorsAction()
     handle_collisions_action = HandleCollisionsAction()
     draw_actors_action = DrawActorsAction(output_service)
-    # randomize_position = Randomize()
 
     script["input"] = [control_actors_action]
-    script["update"] = [handle_collisions_action, move_actors_action] # randomize_position,
+    script["update"] = [handle_collisions_action, move_actors_action] 
     script["output"] = [draw_actors_action]
 
     # start the game

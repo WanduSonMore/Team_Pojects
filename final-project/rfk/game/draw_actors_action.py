@@ -1,3 +1,12 @@
+# Description:
+#   The responsibility of this class of objects is use an output service to draw all actors on the screen.
+#  
+# OOP Principles Used:
+#   Inheritance and polymorphism
+# Reasoning:
+#   This class uses inheritance because the class DrawActorsAction is inheriting things from the action file.
+#   This file uses polymorphism because it is one of the scenarios the action file can perform in the code.
+
 from game.action import Action
 
 class DrawActorsAction(Action):

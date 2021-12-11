@@ -1,3 +1,12 @@
+# Description:
+#   This is the section is where the program recieves information from the user through the use of the WASD keys, where it then uses it to creat volocities to send to output.
+#  
+# OOP Principles Used:
+#   Abstraction and encapsulation
+# Reasoning:
+#   This class uses abstraction because although we can see it doing it, it does send the velocity points to the output when you push the button.
+#   This class used encapsulation because it put a underscore next to the keys and current in this section which should help protect the assigned information.
+
 import sys
 from game.point import Point
 from asciimatics.event import KeyboardEvent
